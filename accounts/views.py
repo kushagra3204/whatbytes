@@ -1,19 +1,19 @@
 from django.shortcuts import render
 
 def loginPage(request):
-    pass
+    return render(request,"login.html")
 
 def signupPage(request):
-    pass
+    return render(request,"signup.html")
 
 def forgotPasswordPage(request):
-    pass
+    return render(request,"forgotPassword.html")
 
 def changePasswordPage(request):
-    pass
+    return render(request,"changePassword.html")
 
 def dashboardPage(request):
-    pass
+    return render(request,"dashboard.html")
 
 def profilePage(request):
-    pass
+    return render(request,"profile.html")

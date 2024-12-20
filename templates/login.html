@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    </head>
+    <body>
+        <div class="login-page">
+            <div class="login-container">
+                <div class="login-container-header">
+                    <h1>Login</h1>
+                </div>
+                <div class="login-container-middle">
+                    <div class="login-container-warning" style="display: none;">
+                        <ul>
+                            <li>Please enter a correct username and password. Note that both fields may be case-sensitive.</li>
+                        </ul>
+                    </div>
+                    <form class="login-container-middle-form">
+                        <div class="login-container-middle-form-component">
+                            <label>Email / Username:</label>
+                            <input type="text" />
+                        </div>
+                        <div class="login-container-middle-form-component">
+                            <label>Password:</label>
+                            <input type="password" />
+                        </div>
+                        <input type="submit" value="Login" />
+                    </form>
+                </div>
+                <div class="login-container-footer">
+                    <p>Don't have an account? <a href="/signup" class="link-text">Sign Up</a></p>
+                    <a href="/forgot_password" class="link-text">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
